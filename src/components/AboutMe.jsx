@@ -9,6 +9,7 @@ import {
   IoMdBicycle,
 } from "react-icons/io";
 import { MdMenuBook } from "react-icons/md";
+import pdf from "../images/CV_DanielRamirez.pdf";
 
 function AboutMe() {
   return (
@@ -80,6 +81,16 @@ function AboutMe() {
           </div>
         </div>
       </div>
+      <button className="bg-primary text-white border-2 border-white hover:border-secondary hover:text-secondary  px-3 py-2 rounded-sm my-4 sm:mt-10">
+        <a
+          href={pdf}
+          target="_blank"
+          rel="noopener noreferrer"
+          download="CV_Daniel_Ramirez.pdf"
+        >
+          Descargar CV
+        </a>
+      </button>
     </section>
   );
 }
