@@ -8,6 +8,7 @@ function Banner() {
       style={{
         backgroundImage: `url(${banner})`,
       }}
+      id="home"
     >
       <Card />
     </section>

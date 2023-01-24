@@ -13,8 +13,13 @@ import pdf from "../images/CV_DanielRamirez.pdf";
 
 function AboutMe() {
   return (
-    <section className="flex  flex-col items-center pt-10  text-white sm:p-16 bg-primary ">
-      <h1 className="font-bold text-2xl "> About Me</h1>
+    <section
+      className="flex  flex-col items-center pt-10  text-white sm:p-16 bg-primary "
+      id="aboutme"
+    >
+      <h1 className="font-bold text-2xl mt-6 border-b-2 border-secondary w-30 m-auto ">
+        About Me
+      </h1>
       <p className=" w-3/4 my-7 text-center sm:text-left">
         I am an eighth semester computer engineering student, prepared to use my
         skills and passion for technology to promote the mission of a company, a
@@ -43,9 +48,11 @@ function AboutMe() {
             Medellin-Colombia
           </div>
         </div>
-        <div className=" w-full sm:w-2/5 sm:my-0 my-8">
-          <h1 className="font-semibold text-xl mt-2 mb-3">my Hobbies</h1>
-          <div className="flex gap-2 sm:gap-4 flex-wrap">
+        <div className="  w-full sm:w-2/5 sm:my-0 my-8">
+          <h1 className="font-semibold text-xl mt-2 mb-3 text-center sm:text-left">
+            My Hobbies
+          </h1>
+          <div className="flex justify-center sm:justify-start  gap-2 sm:gap-4 flex-wrap">
             <div className="bg-gray-800 p-2 rounded-sm text-center">
               <GiSoccerBall className="text-2xl mx-auto" />
               <p>Soccer</p>
@@ -81,7 +88,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <button className="bg-primary text-white border-2 border-white hover:border-secondary hover:text-secondary  px-3 py-2 rounded-sm my-4 sm:mt-10">
+      <button className="bg-primary text-white border-2 border-white hover:border-secondary hover:text-secondary  px-3 py-2 rounded-sm mb-10 sm:mb-4 sm:my-4 sm:mt-10">
         <a
           href={pdf}
           target="_blank"

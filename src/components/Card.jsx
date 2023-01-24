@@ -16,10 +16,10 @@ function Card() {
         <h1 className="text-2xl font-bold ">Daniel Ramirez </h1>
         <p>frontend developer</p>
         <div className="flex flex-row gap-5 justify-center mt-3 mb-8 sm:mb-0">
-          <FaFacebook />
-          <FaLinkedin />
-          <FaTwitter />
-          <FaGithub />
+          <FaFacebook className="hover:text-secondary" />
+          <FaLinkedin className="hover:text-secondary" />
+          <FaTwitter className="hover:text-secondary" />
+          <FaGithub className="hover:text-secondary" />
         </div>
       </div>
     </div>
