@@ -1,14 +1,27 @@
 import React from "react";
-import imagen from "../images/wikitics.jpeg";
-function CardProyects() {
+import Swal from "sweetalert2";
+
+function CardProyects({ proyect }) {
   return (
     <div
-      className="flex sm:flex-row items-center justify-center bg-[rgba(0,0,0,0.6)] hover:bg-blend-multiply sm:m-3 rounded-sm w-80 h-52 bg-cover bg-center  hover:shadow-xl  hover:shadow-blue-300 hover:cursor-pointer"
+      className="proyect flex sm:flex-row items-center justify-center bg-[rgba(0,0,0,0.8)] hover:bg-blend-multiply my-4 sm:m-2 rounded-sm w-80 h-52 bg-cover bg-center  border-secondary  hover:border-x-4  "
       style={{
-        backgroundImage: `url(${imagen})`,
+        backgroundImage: `url(${proyect.UrlImage})`,
       }}
     >
-      <h1 className="hidden hover:flex">WikiTiks</h1>
+      <div className="text-item  ">
+        <h1>{proyect.name}</h1>
+        <button
+          className="border-2 mt-5  border-secondary px-4 py-1 rounded-lg"
+          onClick={() => {
+            Swal.fire(
+              "If you want to see these projects, contact me on any of my social networks :)"
+            );
+          }}
+        >
+          View Project
+        </button>
+      </div>
     </div>
   );
 }

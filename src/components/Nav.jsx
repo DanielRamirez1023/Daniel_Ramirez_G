@@ -36,7 +36,7 @@ function Nav() {
           </li>
 
           <li className="border-b-2 border-primary  hover:border-b-2 hover:border-secondary  cursor-pointer">
-            PROYECTS
+            <a href="#proyects">PROYECTS</a>
           </li>
         </ul>
       </div>
