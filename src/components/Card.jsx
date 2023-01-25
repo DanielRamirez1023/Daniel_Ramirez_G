@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import imagen from "../images/avatar.jpeg";
 
 function Card() {
@@ -16,10 +16,34 @@ function Card() {
         <h1 className="text-2xl font-bold ">Daniel Ramirez </h1>
         <p>frontend developer</p>
         <div className="flex flex-row gap-5 justify-center mt-3 mb-8 sm:mb-0">
-          <FaFacebook className="hover:text-secondary" />
-          <FaLinkedin className="hover:text-secondary" />
-          <FaTwitter className="hover:text-secondary" />
-          <FaGithub className="hover:text-secondary" />
+          <a
+            href="https://www.facebook.com/danielramirez23.dr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className="hover:text-secondary" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/daniel-ramirez-13175a221/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="hover:text-secondary" />
+          </a>
+          <a
+            href="https://www.instagram.com/daniel_ramirez1023/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="hover:text-secondary" />
+          </a>
+          <a
+            href="https://github.com/DanielRamirez1023"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="hover:text-secondary" />
+          </a>
         </div>
       </div>
     </div>

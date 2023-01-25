@@ -14,9 +14,14 @@ function CardProyects({ proyect }) {
         <button
           className="border-2 mt-5  border-secondary px-4 py-1 rounded-lg"
           onClick={() => {
-            Swal.fire(
-              "If you want to see these projects, contact me on any of my social networks :)"
-            );
+            Swal.fire({
+              icon: "info",
+              title: "Good day",
+              html: "<p>If you want to see this project, contact me <b>danielfelipe23.dr@gmail.com</b></p>",
+              background: "#2B3A39",
+              color: "white",
+              confirmButtonColor: "#38bdf8",
+            });
           }}
         >
           View Project

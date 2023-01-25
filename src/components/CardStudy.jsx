@@ -3,7 +3,7 @@ import React from "react";
 function CardStudy({ study }) {
   return (
     <div className="flex flex-col mb-12 items-center sm:text-left sm:flex-row  gap-1 sm:gap-5 sm:my-4">
-      <div className="flex bg-secondary tex-white justify-center rounded-full p-5 w-16 h-16 sm:-mr-24 z-10">
+      <div className="hover:transition-all flex bg-secondary tex-white justify-center rounded-full p-5 w-16 h-16 sm:-mr-24 z-10">
         {study.year}
       </div>
       <div className="hidden w-20 ml-1 h-0.5  bg-white rotate-90 sm:flex"></div>
